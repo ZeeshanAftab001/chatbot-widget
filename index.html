@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sentra widget – dev page</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 640px; margin: 48px auto; padding: 0 20px; color: #222; }
+    button, p, a { font-family: Georgia, serif; } /* host styles must not leak into the widget */
+    button { background: hotpink; border: 3px dashed #000; }
+  </style>
+</head>
+<body>
+  <h1>Host website</h1>
+  <p>This page stands in for a customer site. The widget lives in a Shadow DOM, so these styles can't touch it.</p>
+  <button>A host button</button>
+
+  <!-- Remove data-mock to talk to a real Sentra backend -->
+  <script type="module" src="/src/main.jsx" data-site-key="demo" data-mock="true"></script>
+</body>
+</html>
